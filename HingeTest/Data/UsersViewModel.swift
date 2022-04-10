@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class UsersViewModel {
+    var users: [UserViewModel] = []
+    
+    init() {
+        self.fetchUsers()
+    }
+    
+    func fetchUsers() {
+        NetworkRequester.shared.fetchUsers { users in
+            self.users = users
+        }
+    }
+}
