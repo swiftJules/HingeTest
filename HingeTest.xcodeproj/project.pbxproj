@@ -20,6 +20,7 @@
 		D6BB721D28026B4400911F20 /* ProfileContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB721C28026B4400911F20 /* ProfileContainer.swift */; };
 		D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB721E28026B7B00911F20 /* ProfileImage.swift */; };
 		D6BB722128026BB900911F20 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722028026BB900911F20 /* NameView.swift */; };
+		D6BB72232803074400911F20 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72222803074400911F20 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D6BB721C28026B4400911F20 /* ProfileContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainer.swift; sourceTree = "<group>"; };
 		D6BB721E28026B7B00911F20 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		D6BB722028026BB900911F20 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		D6BB72222803074400911F20 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D6BB721C28026B4400911F20 /* ProfileContainer.swift */,
 				D6BB721E28026B7B00911F20 /* ProfileImage.swift */,
 				D6BB722028026BB900911F20 /* NameView.swift */,
+				D6BB72222803074400911F20 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BB72012802408B00911F20 /* ContentView.swift in Sources */,
+				D6BB72232803074400911F20 /* DetailView.swift in Sources */,
 				D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */,
 				D6BB71FF2802408B00911F20 /* HingeTestApp.swift in Sources */,
 				D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */,
