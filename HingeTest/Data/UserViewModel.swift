@@ -18,8 +18,8 @@ class UserViewModel {
         model?.name ?? ""
     }
     
-    var photo: String {
-        model?.photo ?? ""
+    var photo: String? {
+        model?.photo
     }
     
     var gender: String {
@@ -30,15 +30,15 @@ class UserViewModel {
         }
     }
     
-    var about: String {
+    var about: String? {
         model?.about ?? ""
     }
     
-    var school: String {
+    var school: String? {
         model?.school ?? ""
     }
     
-    var hobbies: String {
+    var hobbies: String? {
         model?.hobbies?.first ?? ""
     }
 }
