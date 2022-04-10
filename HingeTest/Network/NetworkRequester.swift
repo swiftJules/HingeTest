@@ -28,4 +28,18 @@ class NetworkRequester {
             }
         }.resume()
     }
+    
+    func fetchConfig(closure: @escaping (Config) -> Void) {
+        guard let url = URL(string: HingeConstants.configURL) else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let response = try decoder.decode(Config.self, from: data)
+                closure(response)
+            } catch {
+                print(error)
+            }
+        }.resume()
+    }
 }
