@@ -11,6 +11,11 @@
 		D6BB72012802408B00911F20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72002802408B00911F20 /* ContentView.swift */; };
 		D6BB72032802408C00911F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BB72022802408C00911F20 /* Assets.xcassets */; };
 		D6BB72062802408C00911F20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BB72052802408C00911F20 /* Preview Assets.xcassets */; };
+		D6BB720E280240AA00911F20 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB720D280240AA00911F20 /* NetworkRequester.swift */; };
+		D6BB72112802412500911F20 /* HingeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72102802412500911F20 /* HingeConstants.swift */; };
+		D6BB7214280241E700911F20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB7213280241E700911F20 /* User.swift */; };
+		D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72152802423E00911F20 /* UsersViewModel.swift */; };
+		D6BB72182802654600911F20 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72172802654600911F20 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		D6BB72002802408B00911F20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6BB72022802408C00911F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6BB72052802408C00911F20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6BB720D280240AA00911F20 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		D6BB720F280240EB00911F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D6BB72102802412500911F20 /* HingeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HingeConstants.swift; sourceTree = "<group>"; };
+		D6BB7213280241E700911F20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D6BB72152802423E00911F20 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		D6BB72172802654600911F20 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,12 @@
 		D6BB71FD2802408B00911F20 /* HingeTest */ = {
 			isa = PBXGroup;
 			children = (
+				D6BB7212280241D900911F20 /* Data */,
+				D6BB720F280240EB00911F20 /* Info.plist */,
+				D6BB720C2802409700911F20 /* Network */,
 				D6BB71FE2802408B00911F20 /* HingeTestApp.swift */,
 				D6BB72002802408B00911F20 /* ContentView.swift */,
+				D6BB72102802412500911F20 /* HingeConstants.swift */,
 				D6BB72022802408C00911F20 /* Assets.xcassets */,
 				D6BB72042802408C00911F20 /* Preview Content */,
 			);
@@ -65,6 +80,24 @@
 				D6BB72052802408C00911F20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6BB720C2802409700911F20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D6BB720D280240AA00911F20 /* NetworkRequester.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D6BB7212280241D900911F20 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6BB7213280241E700911F20 /* User.swift */,
+				D6BB72152802423E00911F20 /* UsersViewModel.swift */,
+				D6BB72172802654600911F20 /* UserViewModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BB72012802408B00911F20 /* ContentView.swift in Sources */,
+				D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */,
 				D6BB71FF2802408B00911F20 /* HingeTestApp.swift in Sources */,
+				D6BB720E280240AA00911F20 /* NetworkRequester.swift in Sources */,
+				D6BB7214280241E700911F20 /* User.swift in Sources */,
+				D6BB72182802654600911F20 /* UserViewModel.swift in Sources */,
+				D6BB72112802412500911F20 /* HingeConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +308,7 @@
 				DEVELOPMENT_TEAM = G9F42YYF8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HingeTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +338,7 @@
 				DEVELOPMENT_TEAM = G9F42YYF8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HingeTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
