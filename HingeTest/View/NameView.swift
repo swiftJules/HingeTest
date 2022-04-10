@@ -10,8 +10,10 @@ import SwiftUI
 struct NameView: View {
     let name: String
     var body: some View {
-        Text(name)
-            .font(.title)
-            .bold()
+        VStack(alignment: .leading) {
+            Text(name)
+                .font(.title)
+                .bold()
+        }
     }
 }
