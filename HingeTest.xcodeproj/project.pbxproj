@@ -17,6 +17,9 @@
 		D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72152802423E00911F20 /* UsersViewModel.swift */; };
 		D6BB72182802654600911F20 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72172802654600911F20 /* UserViewModel.swift */; };
 		D6BB721A280268B000911F20 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB7219280268B000911F20 /* Config.swift */; };
+		D6BB721D28026B4400911F20 /* ProfileContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB721C28026B4400911F20 /* ProfileContainer.swift */; };
+		D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB721E28026B7B00911F20 /* ProfileImage.swift */; };
+		D6BB722128026BB900911F20 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722028026BB900911F20 /* NameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		D6BB72152802423E00911F20 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		D6BB72172802654600911F20 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D6BB7219280268B000911F20 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D6BB721C28026B4400911F20 /* ProfileContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainer.swift; sourceTree = "<group>"; };
+		D6BB721E28026B7B00911F20 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		D6BB722028026BB900911F20 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		D6BB71FD2802408B00911F20 /* HingeTest */ = {
 			isa = PBXGroup;
 			children = (
+				D6BB721B28026B1700911F20 /* View */,
 				D6BB7212280241D900911F20 /* Data */,
 				D6BB720F280240EB00911F20 /* Info.plist */,
 				D6BB720C2802409700911F20 /* Network */,
@@ -101,6 +108,16 @@
 				D6BB7219280268B000911F20 /* Config.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		D6BB721B28026B1700911F20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6BB721C28026B4400911F20 /* ProfileContainer.swift */,
+				D6BB721E28026B7B00911F20 /* ProfileImage.swift */,
+				D6BB722028026BB900911F20 /* NameView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +193,14 @@
 				D6BB72012802408B00911F20 /* ContentView.swift in Sources */,
 				D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */,
 				D6BB71FF2802408B00911F20 /* HingeTestApp.swift in Sources */,
+				D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */,
 				D6BB720E280240AA00911F20 /* NetworkRequester.swift in Sources */,
+				D6BB722128026BB900911F20 /* NameView.swift in Sources */,
 				D6BB7214280241E700911F20 /* User.swift in Sources */,
 				D6BB721A280268B000911F20 /* Config.swift in Sources */,
 				D6BB72182802654600911F20 /* UserViewModel.swift in Sources */,
 				D6BB72112802412500911F20 /* HingeConstants.swift in Sources */,
+				D6BB721D28026B4400911F20 /* ProfileContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
