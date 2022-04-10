@@ -11,13 +11,6 @@ struct ContentView: View {
     let usersViewModel = UsersViewModel()
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        ProfileContainer(usersViewModel: usersViewModel)
     }
 }
