@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ProfileContainer: View {
+    let usersViewModel: UsersViewModel?
+    let index = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ProfileContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileContainer()
+        VStack(alignment: .leading) {
+            NameView(name: usersViewModel?.users.first?.name ?? "")
+                .padding([.bottom, .leading])
+            ProfileImage(urlString: usersViewModel?.users.first?.name ?? "")
+            Spacer()
+        }//:VSTACK
     }
 }
