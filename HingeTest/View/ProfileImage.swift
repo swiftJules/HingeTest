@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ProfileImage: View {
+    let urlString: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        let url = URL(string: urlString)!
+        AsyncImage(url: url) { image in
+            image
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 400)
 
-struct ProfileImage_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileImage()
+                .clipped()
+        } placeholder: {
+            Image(systemName: "photo")
+                .imageScale(.small)
+                .foregroundColor(.gray)
+        }
     }
 }
