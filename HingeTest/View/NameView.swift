@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct NameView: View {
-    let name: String
+    let user: UserViewModel?
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(name)
-                .font(.title)
-                .bold()
+        if let user = user {
+            VStack(alignment: .leading) {
+                Text(user.name)
+                    .font(.title)
+                    .bold()
+            }
         }
     }
 }
