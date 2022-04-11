@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct Name: View {
+    let user: UserViewModel?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Name_Previews: PreviewProvider {
-    static var previews: some View {
-        Name()
+        if let user = user {
+            VStack(alignment: .leading) {
+                Text(user.name)
+                    .font(.title)
+                    .bold()
+            }
+            .padding()
+        }
     }
 }

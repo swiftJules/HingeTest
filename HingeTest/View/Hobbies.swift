@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct Hobbies: View {
+    let user: UserViewModel?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Hobbies_Previews: PreviewProvider {
-    static var previews: some View {
-        Hobbies()
+        if user?.hobbies != nil {
+            VStack(alignment: .leading) {
+                Text("Hobbies")
+                    .font(.title)
+                    .bold()
+                Text(user?.hobbies ?? "")
+            }//:VSTACK
+        }
     }
 }

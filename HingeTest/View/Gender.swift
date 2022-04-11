@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct Gender: View {
+    let user: UserViewModel?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Gender_Previews: PreviewProvider {
-    static var previews: some View {
-        Gender()
+        if let user = user {
+            VStack(alignment: .leading) {
+                Text("Gender")
+                    .font(.title)
+                    .bold()
+                Text(user.gender)
+            } //:VSTACK
+        }
     }
 }

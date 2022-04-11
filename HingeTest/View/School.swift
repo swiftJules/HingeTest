@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct School: View {
+    let user: UserViewModel?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct School_Previews: PreviewProvider {
-    static var previews: some View {
-        School()
+        if user?.school != nil {
+            VStack(alignment: .leading) {
+                Text("School")
+                    .font(.title)
+                    .bold()
+                Text(user?.school ?? "")
+            }//:VSTACK
+        }
     }
 }
