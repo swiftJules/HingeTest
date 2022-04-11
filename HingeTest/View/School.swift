@@ -17,6 +17,7 @@ struct School: View {
                     .bold()
                 Text(user?.school ?? "")
             }//:VSTACK
+            .padding(EdgeInsets(top: 0, leading: 15, bottom: 5, trailing: 0))
         }
     }
 }
