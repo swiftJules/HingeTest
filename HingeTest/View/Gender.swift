@@ -2,7 +2,7 @@
 //  Gender.swift
 //  HingeTest
 //
-//  Created by RBS70 on 4/11/22.
+//  Created by Juliana Connors on 4/11/22.
 //
 
 import SwiftUI

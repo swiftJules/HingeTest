@@ -2,7 +2,7 @@
 //  Profile.swift
 //  HingeTest
 //
-//  Created by RBS70 on 4/11/22.
+//  Created by Juliana Connors on 4/11/22.
 //
 
 import SwiftUI
@@ -16,7 +16,7 @@ struct ProfileView: View {
             if let user = userViewModels?[userIndex] {
                 ZStack {
                     VStack(alignment: .leading) {
-                        ForEach(0..<Int(sortedViews.count)) { index in
+                        ForEach(0..<sortedViews.count, id: \.self) { index in
                             self.buildView(types: self.sortedViews, index: index, user: user)
                         }
                         Spacer()
