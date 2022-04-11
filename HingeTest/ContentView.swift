@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    let usersViewModel = UsersViewModel()
+    let viewModel = RequestViewModel()
     
     var body: some View {
-        ProfileContainer(usersViewModel: usersViewModel)
+        ProfileView(userViewModels: viewModel.users, sortedViews: viewModel.sortedViews)
     }
 }
