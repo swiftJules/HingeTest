@@ -21,6 +21,11 @@
 		D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB721E28026B7B00911F20 /* ProfileImage.swift */; };
 		D6BB722128026BB900911F20 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722028026BB900911F20 /* NameView.swift */; };
 		D6BB72232803074400911F20 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB72222803074400911F20 /* DetailView.swift */; };
+		D6BB722528030FCC00911F20 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722428030FCC00911F20 /* GenderView.swift */; };
+		D6BB722728030FD600911F20 /* SchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722628030FD600911F20 /* SchoolView.swift */; };
+		D6BB722928030FE400911F20 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722828030FE400911F20 /* AboutView.swift */; };
+		D6BB722B28030FEB00911F20 /* HobbiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722A28030FEB00911F20 /* HobbiesView.swift */; };
+		D6BB722D280439F500911F20 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB722C280439F500911F20 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		D6BB721E28026B7B00911F20 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		D6BB722028026BB900911F20 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		D6BB72222803074400911F20 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D6BB722428030FCC00911F20 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		D6BB722628030FD600911F20 /* SchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolView.swift; sourceTree = "<group>"; };
+		D6BB722828030FE400911F20 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D6BB722A28030FEB00911F20 /* HobbiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesView.swift; sourceTree = "<group>"; };
+		D6BB722C280439F500911F20 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +126,14 @@
 			isa = PBXGroup;
 			children = (
 				D6BB721C28026B4400911F20 /* ProfileContainer.swift */,
+				D6BB722C280439F500911F20 /* Profile.swift */,
 				D6BB721E28026B7B00911F20 /* ProfileImage.swift */,
 				D6BB722028026BB900911F20 /* NameView.swift */,
 				D6BB72222803074400911F20 /* DetailView.swift */,
+				D6BB722428030FCC00911F20 /* GenderView.swift */,
+				D6BB722628030FD600911F20 /* SchoolView.swift */,
+				D6BB722828030FE400911F20 /* AboutView.swift */,
+				D6BB722A28030FEB00911F20 /* HobbiesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,15 +208,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BB722D280439F500911F20 /* Profile.swift in Sources */,
 				D6BB72012802408B00911F20 /* ContentView.swift in Sources */,
 				D6BB72232803074400911F20 /* DetailView.swift in Sources */,
 				D6BB72162802423E00911F20 /* UsersViewModel.swift in Sources */,
+				D6BB722B28030FEB00911F20 /* HobbiesView.swift in Sources */,
 				D6BB71FF2802408B00911F20 /* HingeTestApp.swift in Sources */,
+				D6BB722928030FE400911F20 /* AboutView.swift in Sources */,
+				D6BB722528030FCC00911F20 /* GenderView.swift in Sources */,
 				D6BB721F28026B7B00911F20 /* ProfileImage.swift in Sources */,
 				D6BB720E280240AA00911F20 /* NetworkRequester.swift in Sources */,
 				D6BB722128026BB900911F20 /* NameView.swift in Sources */,
 				D6BB7214280241E700911F20 /* User.swift in Sources */,
 				D6BB721A280268B000911F20 /* Config.swift in Sources */,
+				D6BB722728030FD600911F20 /* SchoolView.swift in Sources */,
 				D6BB72182802654600911F20 /* UserViewModel.swift in Sources */,
 				D6BB72112802412500911F20 /* HingeConstants.swift in Sources */,
 				D6BB721D28026B4400911F20 /* ProfileContainer.swift in Sources */,
