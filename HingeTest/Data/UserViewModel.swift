@@ -39,6 +39,6 @@ class UserViewModel {
     }
     
     var hobbies: String? {
-        model?.hobbies?.first
+        model?.hobbies?.joined(separator: ",").replacingOccurrences(of: ",", with: ", ")
     }
 }
