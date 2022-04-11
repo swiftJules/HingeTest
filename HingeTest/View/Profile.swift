@@ -14,7 +14,7 @@ struct ProfileView: View {
     var body: some View {
         if userIndex < userViewModels?.count ?? 0 {
             if let user = userViewModels?[userIndex] {
-                ZStack {
+                VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
                         ForEach(0..<sortedViews.count, id: \.self) { index in
                             self.buildView(types: self.sortedViews, index: index, user: user)
@@ -22,13 +22,26 @@ struct ProfileView: View {
                         Spacer()
                     }//:VSTACK
                     ZStack {
-                        Button("Next") {
-                            userIndex += 1
-                        }
-                        .frame(maxHeight: .infinity, alignment: .bottom)
-                        .padding([.bottom, .leading])
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Button {
+                                if let count = userViewModels?.count, userIndex != count - 1 {
+                                    userIndex += 1
+                                }
+                            } label: {
+                                Text("Next")
+                                    .frame(width: 75, height: 75)
+                                    .background(.white)
+                                    .clipShape(Circle())
+                                    .shadow(color: .gray, radius: 5, x: 0, y: 2)
+                            }
+                            .padding()
+                            .buttonStyle(PlainButtonStyle())
+                        }//:HSTACK
                     }//:ZSTACK
-                }//:ZSTACK
+                    Spacer()
+                }//:VSTACK
             }
         }
     }
@@ -38,7 +51,7 @@ struct ProfileView: View {
         case is Name.Type:
             return AnyView( Name(user: user) )
         case is Photo.Type:
-            return AnyView( Photo(urlString: user.photo) )
+            return AnyView( Photo(user: user) )
         case is Gender.Type:
             return AnyView( Gender(user: user) )
         case is About.Type:
