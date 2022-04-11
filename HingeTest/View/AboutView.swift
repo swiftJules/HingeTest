@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct AboutView: View {
+    let user: UserViewModel?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("About")
+                .font(.title)
+                .bold()
+            Text(user?.about ?? "")
+        }//:VSTACK
     }
 }
 
-struct AboutView_Previews: PreviewProvider {
-    static var previews: some View {
-        AboutView()
-    }
-}
