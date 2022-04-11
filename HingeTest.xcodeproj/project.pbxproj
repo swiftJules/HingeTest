@@ -78,13 +78,13 @@
 		D6BB71FD2802408B00911F20 /* HingeTest */ = {
 			isa = PBXGroup;
 			children = (
+				D6BB72402804935500911F20 /* Utility */,
 				D6BB721B28026B1700911F20 /* View */,
 				D6BB7212280241D900911F20 /* Data */,
 				D6BB720F280240EB00911F20 /* Info.plist */,
 				D6BB720C2802409700911F20 /* Network */,
 				D6BB71FE2802408B00911F20 /* HingeTestApp.swift */,
 				D6BB72002802408B00911F20 /* ContentView.swift */,
-				D6BB72102802412500911F20 /* HingeConstants.swift */,
 				D6BB72022802408C00911F20 /* Assets.xcassets */,
 				D6BB72042802408C00911F20 /* Preview Content */,
 			);
@@ -130,6 +130,14 @@
 				D6BB72382804599700911F20 /* School.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D6BB72402804935500911F20 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D6BB72102802412500911F20 /* HingeConstants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
