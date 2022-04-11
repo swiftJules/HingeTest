@@ -48,18 +48,18 @@ struct ProfileView: View {
     
     func buildView(types: [Any], index: Int, user: UserViewModel) -> AnyView {
         switch types[index].self {
-        case is Name.Type:
-            return AnyView( Name(user: user) )
         case is Photo.Type:
             return AnyView( Photo(user: user) )
-        case is Gender.Type:
-            return AnyView( Gender(user: user) )
         case is About.Type:
             return AnyView( About(user: user) )
         case is School.Type:
             return AnyView( School(user: user) )
+        case is Gender.Type:
+            return AnyView( Gender(user: user) )
         case is Hobbies.Type:
             return AnyView( Hobbies(user: user) )
+        case is Name.Type:
+            return AnyView( Name(user: user) )
         default: return AnyView(EmptyView())
         }
     }
