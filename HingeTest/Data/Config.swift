@@ -10,13 +10,3 @@ import Foundation
 struct Config: Decodable {
     let profile: [String]
 }
-
-
-//"profile": [
-//    "name",
-//    "photo",
-//    "gender",
-//    "about",
-//    "school",
-//    "hobbies"
-//  ]

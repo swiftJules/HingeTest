@@ -1,16 +1,16 @@
 //
-//  ProfileImage.swift
+//  Photo.swift
 //  HingeTest
 //
-//  Created by RBS70 on 4/9/22.
+//  Created by RBS70 on 4/11/22.
 //
 
 import SwiftUI
 
-struct ProfileImage: View {
-    let urlString: String
+struct Photo: View {
+    let urlString: String?
     var body: some View {
-        if let url = URL(string: urlString) {
+        if let url = URL(string: urlString ?? "") {
             AsyncImage(url: url) { image in
                 image
                     .resizable()

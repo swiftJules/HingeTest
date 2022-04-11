@@ -1,13 +1,13 @@
 //
-//  DetailView.swift
+//  Gender.swift
 //  HingeTest
 //
-//  Created by RBS70 on 4/10/22.
+//  Created by RBS70 on 4/11/22.
 //
 
 import SwiftUI
 
-struct DetailView: View {
+struct Gender: View {
     let user: UserViewModel?
     var body: some View {
         if let user = user {

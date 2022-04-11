@@ -24,21 +24,21 @@ class UserViewModel {
     
     var gender: String {
         if model?.gender == "f" {
-            return "female"
+            return "Female"
         } else {
-            return "male"
+            return "Male"
         }
     }
     
     var about: String? {
-        model?.about ?? ""
+        model?.about
     }
     
     var school: String? {
-        model?.school ?? ""
+        model?.school
     }
     
     var hobbies: String? {
-        model?.hobbies?.first ?? ""
+        model?.hobbies?.joined(separator: ",").replacingOccurrences(of: ",", with: ", ")
     }
 }
