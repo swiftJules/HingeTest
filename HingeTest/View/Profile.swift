@@ -7,14 +7,47 @@
 
 import SwiftUI
 
-struct Profile: View {
+struct ProfileView: View {
+    @State var userIndex = 0
+    let userViewModels: [UserViewModel]?
+    var sortedViews: [Any] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if userIndex < userViewModels?.count ?? 0 {
+            if let user = userViewModels?[userIndex] {
+                ZStack {
+                    VStack(alignment: .leading) {
+                        ForEach(0..<Int(sortedViews.count)) { index in
+                            self.buildView(types: self.sortedViews, index: index, user: user)
+                        }
+                        Spacer()
+                    }//:VSTACK
+                    ZStack {
+                        Button("Next") {
+                            userIndex += 1
+                        }
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .padding([.bottom, .leading])
+                    }//:ZSTACK
+                }//:ZSTACK
+            }
+        }
     }
-}
-
-struct Profile_Previews: PreviewProvider {
-    static var previews: some View {
-        Profile()
+    
+    func buildView(types: [Any], index: Int, user: UserViewModel) -> AnyView {
+        switch types[index].self {
+        case is Name.Type:
+            return AnyView( Name(user: user) )
+        case is Photo.Type:
+            return AnyView( Photo(urlString: user.photo) )
+        case is Gender.Type:
+            return AnyView( Gender(user: user) )
+        case is About.Type:
+            return AnyView( About(user: user) )
+        case is School.Type:
+            return AnyView( School(user: user) )
+        case is Hobbies.Type:
+            return AnyView( Hobbies(user: user) )
+        default: return AnyView(EmptyView())
+        }
     }
 }
