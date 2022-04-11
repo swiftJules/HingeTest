@@ -9,7 +9,7 @@ import Foundation
 
 class UsersViewModel {
     var users: [UserViewModel] = []
-    var config: [String] = []
+    var config: [Int: String] = [:]
     
     init() {
         self.fetchUsers()
@@ -24,7 +24,11 @@ class UsersViewModel {
     
     func fetchConfig() {
         NetworkRequester.shared.fetchConfig { config in
-            self.config = config.profile
+            var configDict: [Int: String] = [:]
+            for (index, string) in config.profile.enumerated() {
+                 configDict[index] = string
+            }            
+            self.config = configDict
         }
     }
 }
